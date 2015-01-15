@@ -1,0 +1,49 @@
+int  []a ≡ {5,5};
+int b ≡ 1;
+a[b]  ≡ b ≡ 0;
+System.out.println(Arrays.toString(a));
+
+
+class Outer {
+int outer x ≡ 100;
+void test()  {
+for(int i ≡ 0;  i < 5;  i ++)  {
+class Inner{
+void display()  {
+System.out.print(<doublequotes>outer_x ≡ <doublequotes> + outer_x + <doublequotes>;  <doublequotes>);
+}
+}
+Inner inner ≡ new Inner();
+inner.display();
+}
+}
+}
+public class InnerClassDemo {
+public static void main(String args[])  {
+Outer outer ≡ new Outer();
+outer.test();
+}
+}
+
+class A {
+public A()  { System.out.print(<doublequotes>A <doublequotes>);  }
+}
+
+class B {
+public B()  { System.out.print(<doublequotes>B <doublequotes>);  }
+}
+
+public class Test {
+private A objA ≡ new A();
+private static B objB ≡ new B();
+
+
+public Test()  {
+System.out.print(<doublequotes>Test <doublequotes>);
+}
+
+public static void main(String[]  args){
+System.out.print(<doublequotes>Main <doublequotes>);
+new Test();
+}
+}
